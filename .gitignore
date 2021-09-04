@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /SavedGame.2048
+.idea/
