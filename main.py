@@ -11,7 +11,7 @@ import base64
 class GameBlock(QLabel):
     def __init__(self, x, y):
         super(GameBlock, self).__init__()
-        self.setFixedSize(60, 60)
+        self.setFixedSize(50, 50)
         self.val = 0
         self.setFont(QFont(u"Segoe UI", 14))
         self.normal_style = u"QWidget {background-color: rgb(220, 220, 220);} "
@@ -208,7 +208,6 @@ class GameField(QMainWindow):
             self.saved_game.append(game)
 
     def save_after_exit(self, cmd):
-        # если пидор никуда не сходил
         if not self.saved_game:
             game = []
             for x in range(0, self.size_x):
@@ -351,7 +350,7 @@ class GameField(QMainWindow):
 
     def reset_map(self):
         self.score = 0
-        self.cnt_trig = False   # не уверен
+        self.cnt_trig = False
         self.statusbar.showMessage(f'Счет: {self.score}')
         for x in range(0, self.size_x):
             for y in range(0, self.size_y):
@@ -415,7 +414,8 @@ class StartWindow(QWidget):
     def __init__(self):
         super(StartWindow, self).__init__()
         self.setWindowTitle('2048')
-        self.resize(250, 130)
+        # self.resize(250, 130)
+        self.resize(200, 110)
         self.setFixedSize(self.size())
         self.gridLayout_3 = QGridLayout(self)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
