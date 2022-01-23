@@ -1,6 +1,5 @@
 # 2048-game
 My version of popular 2048 game.
 
-![2048](https://user-images.githubusercontent.com/71232265/132131952-7300d235-4a0f-4da7-bdd3-b6b526cc4e0f.JPG)
-
-
+## Example
+![2048](https://user-images.githubusercontent.com/71232265/150688812-8e21524f-f3d2-4ee3-81f3-a0693a730972.gif)
